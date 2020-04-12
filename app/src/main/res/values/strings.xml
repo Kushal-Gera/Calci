@@ -9,4 +9,6 @@
     <string name="time_duration">Time Duration</string>
     <string name="enter_absolute_return">Enter Absolute Return %</string>
     <string name="reset">Reset</string>
+    <string name="amount">Amount</string>
+    <string name="rate_of_interest">Rate of Interest</string>
 </resources>

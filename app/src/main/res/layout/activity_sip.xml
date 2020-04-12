@@ -22,7 +22,23 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
-        android:hint="@string/enter_absolute_return"
+        android:hint="@string/amount"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#ccc"
+        android:textSize="22sp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/sip_rate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/rate_of_interest"
         android:importantForAutofill="no"
         android:inputType="number"
         android:paddingStart="10dp"
@@ -48,7 +64,7 @@
         tools:ignore="RtlSymmetry" />
 
     <TextView
-        android:id="@+id/cagr_calc"
+        android:id="@+id/sip_calc"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -65,7 +81,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/cagr_reset"
+        android:id="@+id/sip_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
@@ -75,43 +91,34 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="@string/reset"
-        android:textColor="@color/green"
+        android:textColor="@color/orange"
         android:textSize="22sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="start"
+        android:text="Total Amount :"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/sip_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="10dp"
-            android:layout_weight="3"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="start"
-            android:text="Annualised Return"
-            android:textColor="@color/black"
-            android:textSize="22sp"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:id="@+id/cagr_ans"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="2"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:text="0 %"
-            android:textColor="@color/colorPrimary"
-            android:textSize="32sp"
-            tools:ignore="HardcodedText" />
-
-    </LinearLayout>
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="32sp"
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>
+
