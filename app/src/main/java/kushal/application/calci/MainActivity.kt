@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         sip.setOnClickListener {
             startActivity(Intent(this, SipAct::class.java))
         }
+        lumsum.setOnClickListener {
+            startActivity(Intent(this, LumsumAct::class.java))
+        }
 
 
     }

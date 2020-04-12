@@ -43,8 +43,6 @@ class SipAct : AppCompatActivity() {
             val time = sip_time.text.toString().toInt()
             rate /= 100 * 12
 
-            Toast.makeText(this, rate.toString(), Toast.LENGTH_SHORT).show()
-
             val installments = time * 12
 
             val ans = amount * (rate + 1) *

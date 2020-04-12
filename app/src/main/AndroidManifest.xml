@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kushal.application.calci">
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SipAct"></activity>
+        <activity android:name=".LumsumAct"></activity>
+        <activity android:name=".Lumsum" />
+        <activity android:name=".SipAct" />
         <activity android:name=".Cagr" />
         <activity android:name=".MainActivity">
             <intent-filter>
