@@ -14,12 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        logo.setOnClickListener {
-            for (i in container.children) {
-                i.animate().alpha(0f).start()
-            }
-        }
-
         animationView.setOnClickListener {
             (it as LottieAnimationView).playAnimation()
         }
@@ -33,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         lumsum.setOnClickListener {
             startActivity(Intent(this, LumsumAct::class.java))
         }
+        know.setOnClickListener {}
 
 
     }
