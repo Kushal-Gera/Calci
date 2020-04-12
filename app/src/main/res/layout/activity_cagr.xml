@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Cagr">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/return_img" />
+
+    <EditText
+        android:id="@+id/cagr_absolute"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enter_absolute_return"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#ccc"
+        android:textSize="22sp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/cagr_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/time_duration"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#ccc"
+        android:textSize="22sp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/cagr_calc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_blue"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="@string/calculate"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cagr_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/reset"
+        android:textColor="@color/green"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="3"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"
+            android:text="Annualised Return"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/cagr_ans"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="0 %"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

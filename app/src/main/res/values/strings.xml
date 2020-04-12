@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Calci</string>
+    <string name="description">description</string>
+    <string name="choose_yours">Choose Yours !</string>
+    <string name="sip">SIP</string>
+    <string name="lumsum">Lumsum</string>
+    <string name="cagr">CAGR</string>
+    <string name="calculate">&lt; Calculate &gt;</string>
+    <string name="time_duration">Time Duration</string>
+    <string name="enter_absolute_return">Enter Absolute Return %</string>
+    <string name="reset">Reset</string>
+</resources>
