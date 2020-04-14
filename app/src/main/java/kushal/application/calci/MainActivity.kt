@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
             (it as LottieAnimationView).playAnimation()
         }
 
+
         cagr.setOnClickListener {
             startActivity(Intent(this, Cagr::class.java))
         }
