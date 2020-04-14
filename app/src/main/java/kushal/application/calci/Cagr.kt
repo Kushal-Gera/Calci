@@ -35,7 +35,9 @@ class Cagr : AppCompatActivity() {
             vib.vibrate(100)
 
             val time = cagr_time.text.toString().toDouble()
-            val absolute = cagr_absolute.text.toString().toDouble()
+            var absolute = cagr_absolute.text.toString().toDouble()
+            absolute /= 100
+            absolute += 1
 
             var ans = absolute.pow(1 / time)
             ans = ans.dec()
