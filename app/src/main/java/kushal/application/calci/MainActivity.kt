@@ -3,7 +3,6 @@ package kushal.application.calci
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.children
 import com.airbnb.lottie.LottieAnimationView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,7 +17,6 @@ class MainActivity : AppCompatActivity() {
             (it as LottieAnimationView).playAnimation()
         }
 
-
         cagr.setOnClickListener {
             startActivity(Intent(this, Cagr::class.java))
         }
@@ -28,7 +26,9 @@ class MainActivity : AppCompatActivity() {
         lumsum.setOnClickListener {
             startActivity(Intent(this, LumsumAct::class.java))
         }
-        know.setOnClickListener {}
+        dcf.setOnClickListener {
+            startActivity(Intent(this, DCF::class.java));
+        }
 
     }
 

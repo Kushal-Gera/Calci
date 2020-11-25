@@ -6,6 +6,7 @@ import android.os.Vibrator
 import android.view.inputmethod.EditorInfo
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_lumsum.*
+import java.text.DecimalFormat
 import kotlin.math.pow
 
 class LumsumAct : AppCompatActivity() {
@@ -43,8 +44,9 @@ class LumsumAct : AppCompatActivity() {
 
             val ans = (rate + 1).pow(time) * amount
 
-            lum_ans.text = ans.toLong().toString()
-
+            val formatter = DecimalFormat("###,##,##,##0")
+            val str = formatter.format(ans.toDouble())
+            lum_ans.text = str
         }
 
     }

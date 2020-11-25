@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LumsumAct"></activity>
+        <activity android:name=".DCF"></activity>
+        <activity android:name=".LumsumAct" />
         <activity android:name=".Lumsum" />
         <activity android:name=".SipAct" />
         <activity android:name=".Cagr" />

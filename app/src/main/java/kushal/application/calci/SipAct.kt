@@ -4,9 +4,10 @@ import android.content.Context
 import android.os.Bundle
 import android.os.Vibrator
 import android.view.inputmethod.EditorInfo
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_sip.*
+import java.text.DecimalFormat
+import java.util.*
 import kotlin.math.pow
 
 class SipAct : AppCompatActivity() {
@@ -44,14 +45,13 @@ class SipAct : AppCompatActivity() {
             rate /= 100 * 12
 
             val installments = time * 12
+            val ans = amount * (rate + 1) * (((1 + rate).pow(installments) - 1) / rate)
 
-            val ans = amount * (rate + 1) *
-                    (((1 + rate).pow(installments) - 1) / rate)
+            val formatter = DecimalFormat("###,##,##,##0")
+            val str = formatter.format(ans.toDouble())
 
-            sip_ans.text = ans.toLong().toString()
-
+            sip_ans.text = str
         }
-
 
     }
 }

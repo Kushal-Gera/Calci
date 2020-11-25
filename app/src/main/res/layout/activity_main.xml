@@ -89,7 +89,6 @@
         android:layout_marginBottom="20dp"
         android:background="@color/black" />
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -130,7 +129,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_bg_yell"
-                android:drawableTop="@drawable/ic_attach_money_black_24dp"
+                android:drawableTop="@drawable/ic_baseline_account_balance_wallet_24"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:padding="10dp"
@@ -167,7 +166,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/know"
+                android:id="@+id/dcf"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
@@ -175,13 +174,14 @@
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_bg_red"
-                android:drawableTop="@drawable/ic_apps_black_24dp"
+                android:drawableTop="@drawable/ic_attach_money_black_24dp"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="dont know"
-                android:textColor="@color/red"
-                android:textSize="22sp" />
+                android:text="@string/dcf"
+                android:textColor="@color/dcf_blue"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 

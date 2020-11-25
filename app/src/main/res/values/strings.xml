@@ -11,4 +11,13 @@
     <string name="reset">Reset</string>
     <string name="amount">Amount</string>
     <string name="rate_of_interest">Rate of Interest</string>
+    <string name="dcf">DCF</string>
+    <string name="initial_free_cash_flow">Initial FCF</string>
+    <string name="discount_rate">Discount Rate</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="current_price">Current Price</string>
+    <string name="terminal_rate">Terminal Rate</string>
+    <string name="net_debt">Net Debt</string>
+    <string name="growth_rate_1_5">Growth Rate(1-5)</string>
+    <string name="growth_rate_6_10">Growth Rate(6-10)</string>
 </resources>
