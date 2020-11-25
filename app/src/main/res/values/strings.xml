@@ -20,4 +20,6 @@
     <string name="net_debt">Net Debt</string>
     <string name="growth_rate_1_5">Growth Rate(1-5)</string>
     <string name="growth_rate_6_10">Growth Rate(6-10)</string>
+    <string name="cash_equivalents">Cash Equivalents</string>
+    <string name="margin_of_safety">Margin of Safety</string>
 </resources>

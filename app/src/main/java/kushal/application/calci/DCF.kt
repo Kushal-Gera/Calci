@@ -29,12 +29,11 @@ class DCF : AppCompatActivity() {
             vib.vibrate(20)
         }
 
-        dcf_reset.performClick()
-
         dcf_calci.setOnClickListener {
             if (initialFCF.text.isNullOrEmpty() or disc_rate.text.isNullOrEmpty() or
                 growthRate1to5.text.isNullOrEmpty() or growthRate6to10.text.isNullOrEmpty() or
                 marketCap.text.isNullOrEmpty() or currentPrice.text.isNullOrEmpty()
+                or terminalRate.text.isNullOrEmpty()
             ) {
                 initialFCF.requestFocus()
                 return@setOnClickListener
@@ -49,9 +48,11 @@ class DCF : AppCompatActivity() {
             val g1to5 = growthRate1to5.text.toString().toDouble()
             val g6to10 = growthRate6to10.text.toString().toDouble()
             val terminalRate = terminalRate.text.toString().toDouble()
-            val debt = debt.text.toString().toInt()
-            val shares = marketCap / price
+            val debt = debt.text.toString()
+            val cashEqui = cash.text.toString()
+            var safety = marginOfSafety.text.toString()
 
+            val shares = marketCap / price
             var total = 0.0
             val list = arrayListOf<Double>()
 
@@ -65,14 +66,26 @@ class DCF : AppCompatActivity() {
             list[10] = list[10] / ((1 + (rate / 100)).pow(10))
 
             for (x in 0..10)
-                Log.i("Tag", (x + 1).toString() + ") " + list[x].toString())
+                Log.i("Tag", (x + 1).toString() + ". " + list[x].toString())
 
             for (x in list) total += x
 
-            total -= debt * (1.1).pow(5)
-            val ans = total / shares
+            if (debt.isNotEmpty())
+                total -= debt.toInt()
+            if (cashEqui.isNotEmpty())
+                total += cashEqui.toInt()
+
+            var ans = total / shares
+
+            if (safety.isEmpty()) safety = "0"
+            if ((safety.toInt() <= 100) and (safety.toInt() > 0))
+                ans -= (ans * safety.toInt()) / 100
+            else
+                marginOfSafety.setText("0")
 
             dcf_ans.text = ans.roundToInt().toString()
+            scroller.scrollTo(0, scroller.bottom)
         }
+
     }
 }
