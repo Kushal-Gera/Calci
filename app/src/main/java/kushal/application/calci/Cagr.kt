@@ -34,8 +34,8 @@ class Cagr : AppCompatActivity() {
             cagr_time.onEditorAction(EditorInfo.IME_ACTION_DONE)
             vib.vibrate(100)
 
-            val time = cagr_time.text.toString().toDouble()
-            var absolute = cagr_absolute.text.toString().toDouble()
+            val time = cagr_time.text.toString().trim().toDouble()
+            var absolute = cagr_absolute.text.toString().trim().toDouble()
             absolute /= 100
             absolute += 1
 
