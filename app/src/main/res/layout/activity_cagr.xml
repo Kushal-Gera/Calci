@@ -52,7 +52,7 @@
             android:layout_height="50dp"
             android:hint="@string/time_duration"
             android:importantForAutofill="no"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:paddingStart="10dp"
             android:textColor="@color/black"
             android:textColorHint="#ccc"
