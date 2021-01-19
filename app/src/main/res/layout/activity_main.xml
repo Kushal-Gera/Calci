@@ -9,97 +9,94 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="-30dp"
-        android:background="@drawable/bg_toolbar"
+        android:layout_margin="12dp"
+        android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        tools:ignore="UseCompoundDrawables">
+        android:letterSpacing="0.05"
+        android:text="@string/my_calci"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            app:cardCornerRadius="50dp">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/description"
-                android:elevation="10dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/coins" />
-
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginEnd="50dp"
-            android:fontFamily="sans-serif-condensed-light"
-            android:gravity="center"
-            android:letterSpacing="0.1"
-            android:text="My  Calci"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-    </LinearLayout>
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_gravity="center_vertical"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="false"
-        app:lottie_rawRes="@raw/money" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="-30dp"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="1dp"
+        android:text="Fearing Volatility ?\nStay Here 4 Long..."
+        android:textColor="#252525"
+        android:textFontWeight="700"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/penny_st" />
+
+        <!--        <com.airbnb.lottie.LottieAnimationView-->
+        <!--            android:id="@+id/animationView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:lottie_autoPlay="true"-->
+        <!--            app:lottie_loop="false"-->
+        <!--            app:lottie_rawRes="@raw/confff" />-->
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="-40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="sans-serif-light"
         android:gravity="start"
         android:letterSpacing="0.1"
         android:text="@string/choose_yours"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#252525"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <View
         android:layout_width="200dp"
         android:layout_height="2dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         android:background="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <TextView
@@ -143,7 +140,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
@@ -166,7 +163,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/dcf"
+                android:id="@+id/value"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
@@ -178,7 +175,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="@string/dcf"
+                android:text="@string/value"
                 android:textColor="@color/dcf_blue"
                 android:textSize="22sp"
                 android:textStyle="bold" />

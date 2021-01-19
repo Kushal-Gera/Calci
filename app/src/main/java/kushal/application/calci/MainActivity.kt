@@ -1,21 +1,19 @@
 package kushal.application.calci
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.airbnb.lottie.LottieAnimationView
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.bottom_dialog_view.*
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-        animationView.setOnClickListener {
-            (it as LottieAnimationView).playAnimation()
-        }
 
         cagr.setOnClickListener {
             startActivity(Intent(this, Cagr::class.java))
@@ -26,11 +24,27 @@ class MainActivity : AppCompatActivity() {
         lumsum.setOnClickListener {
             startActivity(Intent(this, LumsumAct::class.java))
         }
-        dcf.setOnClickListener {
-            startActivity(Intent(this, DCF::class.java));
+        value.setOnClickListener {
+            show_bottom_dialog()
         }
 
     }
 
+    fun show_bottom_dialog() {
+        val dialog = BottomSheetDialog(this)
+        dialog.setContentView(R.layout.bottom_dialog_view)
+        dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.show()
+
+        dialog.dia_benja.setOnClickListener {
+            startActivity(Intent(this, Benjamin_Intrinsic::class.java))
+            dialog.dismiss()
+        }
+
+        dialog.dia_dcf.setOnClickListener {
+            startActivity(Intent(this, DCF::class.java))
+            dialog.dismiss()
+        }
+    }
 
 }

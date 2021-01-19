@@ -36,8 +36,8 @@ class Cagr : AppCompatActivity() {
 
             val time = cagr_time.text.toString().trim().toDouble()
             var absolute = cagr_absolute.text.toString().trim().toDouble()
-            absolute /= 100
-            absolute += 1
+            absolute /= 100.0
+            absolute += 1.0
 
             var ans = absolute.pow(1 / time)
             ans = ans.dec()

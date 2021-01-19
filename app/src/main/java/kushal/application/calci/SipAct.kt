@@ -18,7 +18,7 @@ class SipAct : AppCompatActivity() {
 
 
         val vib = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
-
+        
         sip_reset.setOnClickListener {
             sip_time.setText("")
             sip_amount.setText("")
@@ -41,7 +41,7 @@ class SipAct : AppCompatActivity() {
 
             val amount = sip_amount.text.toString().toInt()
             var rate = sip_rate.text.toString().toFloat()
-            val time = sip_time.text.toString().toInt()
+            val time = sip_time.text.toString().toFloat()
             rate /= 100 * 12
 
             val installments = time * 12

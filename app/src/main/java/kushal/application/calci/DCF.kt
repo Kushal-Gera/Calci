@@ -41,8 +41,8 @@ class DCF : AppCompatActivity() {
 
             vib.vibrate(100)
 
-            val cashFlow = initialFCF.text.toString().toInt()
-            val marketCap = marketCap.text.toString().toInt()
+            val cashFlow = initialFCF.text.toString().toDouble()
+            val marketCap = marketCap.text.toString().toDouble()
             val price = currentPrice.text.toString().toDouble()
             val rate = disc_rate.text.toString().toDouble()
             val g1to5 = growthRate1to5.text.toString().toDouble()
@@ -52,8 +52,8 @@ class DCF : AppCompatActivity() {
             val cashEqui = cash.text.toString()
             var safety = marginOfSafety.text.toString()
 
-            val shares = marketCap / price
-            var total = 0.0
+            val shares: Double = marketCap / price
+            var total: Double = 0.0
             val list = arrayListOf<Double>()
 
             list.add(cashFlow * (1 + (g1to5 / 100)))
@@ -71,9 +71,9 @@ class DCF : AppCompatActivity() {
             for (x in list) total += x
 
             if (debt.isNotEmpty())
-                total -= debt.toInt()
+                total -= debt.toDouble()
             if (cashEqui.isNotEmpty())
-                total += cashEqui.toInt()
+                total += cashEqui.toDouble()
 
             var ans = total / shares
 

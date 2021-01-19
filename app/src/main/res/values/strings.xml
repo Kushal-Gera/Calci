@@ -11,7 +11,7 @@
     <string name="reset">Reset</string>
     <string name="amount">Amount</string>
     <string name="rate_of_interest">Rate of Interest</string>
-    <string name="dcf">DCF</string>
+    <string name="value">Value</string>
     <string name="initial_free_cash_flow">Initial FCF</string>
     <string name="discount_rate">Discount Rate</string>
     <string name="market_cap">Market Cap</string>
@@ -22,4 +22,9 @@
     <string name="growth_rate_6_10">Growth Rate(6-10)</string>
     <string name="cash_equivalents">Cash Equivalents</string>
     <string name="margin_of_safety">Margin of Safety</string>
+    <string name="my_calci"><u> My Calci </u></string>
+    <string name="eps">EPS</string>
+    <string name="_10_year_gov_bond_yield">10 Year Gov. Bond Yield</string>
+    <string name="dcf">DCF Method</string>
+    <string name="benjamin">Benjamin</string>
 </resources>
