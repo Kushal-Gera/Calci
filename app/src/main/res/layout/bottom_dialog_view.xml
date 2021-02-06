@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:background="@android:color/transparent"
+    android:layout_height="280dp"
     android:gravity="center">
 
     <androidx.cardview.widget.CardView
@@ -12,19 +12,29 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="-20dp"
         app:cardCornerRadius="30dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/linearLayoutCompat"
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="-10dp"
             android:layout_marginEnd="10dp"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="start"
+                android:text="Choose One"
+                android:textColor="#252525"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/dia_dcf"
@@ -47,13 +57,12 @@
                     android:contentDescription="@string/description"
                     android:padding="5dp"
                     android:src="@drawable/ic_attach_money_black_24dp"
-                    android:tint="#2196F3" />
+                    android:tint="#1E88E5" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:background="@android:color/transparent"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:text="@string/dcf"
@@ -69,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/button_bg"
                 android:gravity="center"
@@ -83,16 +92,50 @@
                     android:layout_marginStart="10dp"
                     android:contentDescription="@string/description"
                     android:src="@drawable/ic_baseline_person_24"
-                    android:tint="#2196F3" />
+                    android:tint="#1E88E5" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:background="@android:color/transparent"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:text="@string/benjamin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/my_own"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:tint="#1E88E5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="My Own"
                     android:textAllCaps="true"
                     android:textColor="@color/black"
                     android:textSize="22sp" />

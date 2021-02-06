@@ -50,16 +50,16 @@ class DCF : AppCompatActivity() {
             val terminalRate = terminalRate.text.toString().toDouble()
             val debt = debt.text.toString()
             val cashEqui = cash.text.toString()
-            var safety = marginOfSafety.text.toString()
+            var safety = pe.text.toString()
 
             val shares: Double = marketCap / price
-            var total: Double = 0.0
+            var total = 0.0
             val list = arrayListOf<Double>()
 
             list.add(cashFlow * (1 + (g1to5 / 100)))
             for (i in 1..5) list.add(list[i - 1] * (1 + (g6to10 / 100)))
             for (i in 6..9) list.add(list[i - 1] * (1 + (g6to10 / 100)))
-            list.add(list.last() * ((1 + (terminalRate / 100)) / (rate / 100 - terminalRate / 100)))
+            list.add(list.last() * ((1 + (terminalRate / 100)) / (rate / 100 - (terminalRate / 100))))
 
             for (x in 0..9)
                 list[x] = list[x] / ((1 + (rate / 100)).pow(x + 1))
@@ -81,7 +81,7 @@ class DCF : AppCompatActivity() {
             if ((safety.toInt() <= 100) and (safety.toInt() > 0))
                 ans -= (ans * safety.toInt()) / 100
             else
-                marginOfSafety.setText("0")
+                pe.setText("0")
 
             dcf_ans.text = ans.roundToInt().toString()
             scroller.scrollTo(0, scroller.bottom)

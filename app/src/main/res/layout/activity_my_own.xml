@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".DCF">
+    tools:context=".MyOwn">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,19 +21,6 @@
             app:lottie_autoPlay="true"
             app:lottie_loop="false"
             app:lottie_rawRes="@raw/scanning" />
-
-<!--        <ImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="260dp"-->
-<!--            android:layout_marginBottom="20dp"-->
-<!--            android:contentDescription="@string/description"-->
-<!--            android:paddingStart="50dp"-->
-<!--            android:paddingTop="60dp"-->
-<!--            android:paddingEnd="50dp"-->
-<!--            android:paddingBottom="80dp"-->
-<!--            android:scaleType="centerCrop"-->
-<!--            android:src="@drawable/fair"-->
-<!--            android:visibility="gone" />-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,10 +40,10 @@
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/initialFCF"
+                    android:id="@+id/profits"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="@string/initial_free_cash_flow"
+                    android:hint="Profits"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
@@ -80,63 +67,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:hint="@string/discount_rate"
-                    android:importantForAutofill="no"
-                    android:inputType="numberDecimal"
-                    android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
-                    android:textSize="22sp"
-                    tools:ignore="RtlSymmetry" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="10dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="2"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/marketCap"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="@string/market_cap"
-                    android:importantForAutofill="no"
-                    android:inputType="numberDecimal"
-                    android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
-                    android:textSize="22sp"
-                    tools:ignore="RtlSymmetry" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="2"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/currentPrice"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="@string/current_price"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
@@ -218,29 +148,6 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="2"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/debt"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="@string/net_debt"
-                    android:importantForAutofill="no"
-                    android:inputType="numberDecimal"
-                    android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
-                    android:textSize="22sp"
-                    tools:ignore="RtlSymmetry" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
@@ -261,39 +168,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="10dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="2"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/cash"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="@string/cash_equivalents"
-                    android:importantForAutofill="no"
-                    android:inputType="numberDecimal"
-                    android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
-                    android:textSize="22sp"
-                    tools:ignore="RtlSymmetry" />
-
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
@@ -307,7 +181,7 @@
                     android:id="@+id/pe"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="@string/margin_of_safety"
+                    android:hint="PE ratio later"
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:paddingStart="5dp"
@@ -326,9 +200,9 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="25dp"
-            android:background="@drawable/bg_dcf_blue"
+            android:background="@drawable/bg_dcf_green"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
             android:letterSpacing="0.1"
@@ -348,13 +222,14 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="@string/reset"
-            android:textColor="#79cbdb"
+            android:textColor="@color/red"
             android:textSize="22sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="start"
@@ -369,13 +244,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="-30dp"
+            android:layout_marginTop="-20dp"
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text=""
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/orange"
             android:textSize="32sp"
             tools:ignore="HardcodedText" />
 
