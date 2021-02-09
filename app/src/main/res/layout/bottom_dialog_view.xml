@@ -126,7 +126,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="10dp"
                     android:contentDescription="@string/description"
-                    android:src="@drawable/ic_baseline_person_24"
+                    android:src="@drawable/ic_baseline_card_giftcard_24"
                     android:tint="#1E88E5" />
 
                 <TextView

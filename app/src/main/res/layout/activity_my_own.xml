@@ -18,9 +18,10 @@
             android:layout_width="match_parent"
             android:layout_height="260dp"
             android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
             app:lottie_autoPlay="true"
             app:lottie_loop="false"
-            app:lottie_rawRes="@raw/scanning" />
+            app:lottie_rawRes="@raw/search" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +44,7 @@
                     android:id="@+id/profits"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Profits"
+                    android:hint="EPS"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
@@ -154,12 +155,12 @@
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/terminalRate"
+                    android:id="@+id/pe"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="@string/terminal_rate"
+                    android:hint="PE ratio later"
                     android:importantForAutofill="no"
-                    android:inputType="numberDecimal"
+                    android:inputType="number"
                     android:paddingStart="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="#ccc"
@@ -167,7 +168,6 @@
                     tools:ignore="RtlSymmetry" />
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
@@ -178,12 +178,12 @@
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/pe"
+                    android:id="@+id/terminalRate"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="PE ratio later"
+                    android:hint="@string/terminal_rate"
                     android:importantForAutofill="no"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:paddingStart="5dp"
                     android:textColor="@color/black"
                     android:textColorHint="#ccc"
@@ -200,7 +200,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="25dp"
             android:background="@drawable/bg_dcf_green"
             android:fontFamily="sans-serif-light"
@@ -229,7 +229,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="start"
@@ -244,13 +243,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="-20dp"
+            android:layout_marginTop="-30dp"
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text=""
-            android:textColor="@color/orange"
+            android:textColor="@color/blue"
             android:textSize="32sp"
             tools:ignore="HardcodedText" />
 
