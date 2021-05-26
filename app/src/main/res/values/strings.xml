@@ -27,4 +27,5 @@
     <string name="_10_year_gov_bond_yield">10 Year Gov. Bond Yield</string>
     <string name="dcf">DCF Method</string>
     <string name="benjamin">Benjamin</string>
+    <string name="step_up_rate">Step Up Rate</string>
 </resources>
