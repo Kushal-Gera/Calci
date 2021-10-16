@@ -40,30 +40,31 @@ class SipAct : AppCompatActivity() {
             sip_time.onEditorAction(EditorInfo.IME_ACTION_DONE)
             vib.vibrate(100)
 
-            var amount = sip_amount.text.toString().toInt()
+            var amount = sip_amount.text.toString().toFloat()
             var rate = sip_rate.text.toString().toFloat()
             val time = sip_time.text.toString().toFloat()
+            val installments = time * 12
 
             var ans = 0.0
             if (!sip_stepup_rate.text.isNullOrBlank() and (sip_stepup_rate.text.toString() != "0")) {
-                val stepup_rate = sip_stepup_rate.text.toString().toFloat().toDouble()
-                var s = stepup_rate
-                s /= 100 * 12
+
+                var stepUp_rate = sip_stepup_rate.text.toString().toFloat()
+                var r = rate.toDouble()
+                r /= 12
+                r = (1 + r / 100)
+                stepUp_rate = (1 + stepUp_rate / 100)
+
+                Log.i("Tag", "r: $r , stepUp_rate: $stepUp_rate")
 
                 for (i in 1..time.toInt()) {
-                    val amt_to_be_added =
-                        (amount * (s + 1) * (((1 + s).pow(12) - 1) / s))
-
-                    amount = (amount * (1 + (stepup_rate / 100))).toInt()
-                    ans *= (1 + rate / 100)
-                    ans += amt_to_be_added
-
-                    Log.i("Tag", "time: $i , amount: $amount, ans: $ans")
+                    for (j in 1..12) {
+                        ans += amount * r.pow(((12 - j + installments - i * 12 + 1).toDouble()))
+                    }
+                    amount *= stepUp_rate
                 }
 
             } else {
                 rate /= 100 * 12
-                val installments = time * 12
                 ans = (amount * (rate + 1) * (((1 + rate).pow(installments) - 1) / rate)).toDouble()
             }
 
@@ -72,5 +73,18 @@ class SipAct : AppCompatActivity() {
 
             sip_ans.text = str
         }
+    }
+
+    private fun TO_CAGR(rate: Double): Double {
+        var absolute = rate
+
+        absolute /= 100
+        absolute += 1
+
+        var ans = absolute.pow(0.08333)
+        ans = ans.dec()
+        ans = ans.times(100)
+
+        return ans
     }
 }
