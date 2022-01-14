@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/bg_gradient"
     android:orientation="vertical"
     android:paddingBottom="20dp"
     tools:context=".SipAct">
@@ -28,18 +28,19 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
+            android:textColorHint="@color/new_grey"
             app:boxBackgroundMode="outline">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/sip_amount"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:backgroundTint="@color/new_grey"
                 android:hint="@string/amount"
                 android:importantForAutofill="no"
                 android:inputType="numberDecimal"
                 android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="#ccc"
+                android:textColor="@color/white"
                 android:textSize="22sp"
                 tools:ignore="RtlSymmetry" />
 
@@ -58,18 +59,19 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/sip_rate"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/rate_of_interest"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="10dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -81,18 +83,19 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/sip_stepup_rate"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/step_up_rate"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="10dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -106,18 +109,19 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="10dp"
+            android:textColorHint="@color/new_grey"
             app:boxBackgroundMode="outline">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/sip_time"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:backgroundTint="@color/new_grey"
                 android:hint="@string/time_duration"
                 android:importantForAutofill="no"
                 android:inputType="numberDecimal"
                 android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="#ccc"
+                android:textColor="@color/white"
                 android:textSize="22sp"
                 tools:ignore="RtlSymmetry" />
 
@@ -146,12 +150,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="35dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="@string/reset"
-            android:textColor="@color/orange"
+            android:textColor="@color/green"
             android:textSize="22sp" />
 
         <TextView
@@ -162,7 +166,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="start"
             android:text="Total Amount :"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="22sp"
             tools:ignore="HardcodedText" />
 
@@ -176,7 +180,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text=""
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/white"
             android:textSize="32sp"
             tools:ignore="HardcodedText" />
 

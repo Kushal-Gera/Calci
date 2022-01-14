@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/bg_gradient"
     android:orientation="vertical"
     tools:context=".Cagr">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="350dp"
         android:layout_marginBottom="20dp"
         android:contentDescription="@string/description"
+        android:padding="20dp"
         android:scaleType="centerCrop"
         android:src="@drawable/return_img" />
 
@@ -22,18 +23,19 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
+        android:textColorHint="@color/new_grey"
         app:boxBackgroundMode="outline">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/cagr_absolute"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:backgroundTint="@color/new_grey"
             android:hint="@string/enter_absolute_return"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:paddingStart="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="#ccc"
+            android:textColor="@color/white"
             android:textSize="22sp"
             tools:ignore="RtlSymmetry" />
 
@@ -44,18 +46,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/new_grey">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/cagr_time"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:backgroundTint="@color/new_grey"
             android:hint="@string/time_duration"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:paddingStart="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="#ccc"
+            android:textColor="@color/white"
+            android:textColorHint="#EAEAEA"
             android:textSize="22sp"
             tools:ignore="RtlSymmetry" />
 
@@ -84,12 +88,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="35dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="@string/reset"
-        android:textColor="@color/red"
+        android:textColor="@color/blue"
         android:textSize="22sp" />
 
     <LinearLayout
@@ -109,7 +113,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="start"
             android:text="Annualised Return"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="22sp"
             tools:ignore="HardcodedText" />
 
@@ -122,7 +126,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="0 %"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/white"
             android:textSize="32sp"
             tools:ignore="HardcodedText" />
 

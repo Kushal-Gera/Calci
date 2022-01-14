@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F6F6"
+    android:background="@drawable/bg_gradient"
     android:orientation="vertical"
     tools:context=".LumsumAct">
 
@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:textColorHint="@color/new_grey"
         android:layout_marginBottom="10dp"
         app:boxBackgroundMode="outline">
 
@@ -30,11 +31,11 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="@string/amount"
+            android:backgroundTint="@color/new_grey"
             android:importantForAutofill="no"
             android:inputType="number"
             android:paddingStart="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="#ccc"
+            android:textColor="@color/white"
             android:textSize="22sp"
             tools:ignore="RtlSymmetry" />
 
@@ -45,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:textColorHint="@color/new_grey"
         android:layout_marginBottom="10dp"
         app:boxBackgroundMode="outline">
 
@@ -53,11 +55,11 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="@string/rate_of_interest"
+            android:backgroundTint="@color/new_grey"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:paddingStart="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="#ccc"
+            android:textColor="@color/white"
             android:textSize="22sp"
             tools:ignore="RtlSymmetry" />
 
@@ -68,6 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:textColorHint="@color/new_grey"
         android:layout_marginBottom="10dp"
         app:boxBackgroundMode="outline">
 
@@ -77,10 +80,10 @@
             android:layout_height="50dp"
             android:hint="@string/time_duration"
             android:importantForAutofill="no"
+            android:backgroundTint="@color/new_grey"
             android:inputType="number"
             android:paddingStart="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="#ccc"
+            android:textColor="@color/white"
             android:textSize="22sp"
             tools:ignore="RtlSymmetry" />
 
@@ -114,7 +117,7 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="@string/reset"
-        android:textColor="@color/green"
+        android:textColor="#F37B56"
         android:textSize="22sp" />
 
     <TextView
@@ -125,7 +128,7 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="start"
         android:text="Total Amount :"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="22sp"
         tools:ignore="HardcodedText" />
 
@@ -139,7 +142,7 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text=""
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/white"
         android:textSize="32sp"
         tools:ignore="HardcodedText" />
 

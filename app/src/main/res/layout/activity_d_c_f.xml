@@ -5,7 +5,7 @@
     android:id="@+id/scroller"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/bg_gradient"
     android:orientation="vertical"
     tools:context=".DCF">
 
@@ -22,18 +22,18 @@
             app:lottie_loop="false"
             app:lottie_rawRes="@raw/scanning" />
 
-<!--        <ImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="260dp"-->
-<!--            android:layout_marginBottom="20dp"-->
-<!--            android:contentDescription="@string/description"-->
-<!--            android:paddingStart="50dp"-->
-<!--            android:paddingTop="60dp"-->
-<!--            android:paddingEnd="50dp"-->
-<!--            android:paddingBottom="80dp"-->
-<!--            android:scaleType="centerCrop"-->
-<!--            android:src="@drawable/fair"-->
-<!--            android:visibility="gone" />-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="260dp"-->
+        <!--            android:layout_marginBottom="20dp"-->
+        <!--            android:contentDescription="@string/description"-->
+        <!--            android:paddingStart="50dp"-->
+        <!--            android:paddingTop="60dp"-->
+        <!--            android:paddingEnd="50dp"-->
+        <!--            android:paddingBottom="80dp"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            android:src="@drawable/fair"-->
+        <!--            android:visibility="gone" />-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,18 +50,19 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/initialFCF"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/initial_free_cash_flow"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -73,18 +74,19 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/disc_rate"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/discount_rate"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -107,18 +109,19 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/marketCap"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/market_cap"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -130,18 +133,19 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/currentPrice"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/current_price"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -164,18 +168,19 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/growthRate1to5"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/growth_rate_1_5"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -187,18 +192,19 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/growthRate6to10"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/growth_rate_6_10"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -221,18 +227,19 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/debt"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/net_debt"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -244,18 +251,19 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/terminalRate"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/terminal_rate"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -278,18 +286,19 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/cash"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/cash_equivalents"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -301,18 +310,19 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="2"
+                android:textColorHint="@color/new_grey"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/pe"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:backgroundTint="@color/new_grey"
                     android:hint="@string/margin_of_safety"
                     android:importantForAutofill="no"
                     android:inputType="number"
                     android:paddingStart="5dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="#ccc"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     tools:ignore="RtlSymmetry" />
 
@@ -340,7 +350,7 @@
         <TextView
             android:id="@+id/dcf_reset"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="23dp"
             android:layout_gravity="end"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
@@ -348,7 +358,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="@string/reset"
-            android:textColor="#79cbdb"
+            android:textColor="@color/dcf_blue"
             android:textSize="22sp" />
 
         <TextView
@@ -359,7 +369,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="start"
             android:text="Intrinsic Value :"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="22sp"
             tools:ignore="HardcodedText" />
 
@@ -375,7 +385,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text=""
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/white"
             android:textSize="32sp"
             tools:ignore="HardcodedText" />
 

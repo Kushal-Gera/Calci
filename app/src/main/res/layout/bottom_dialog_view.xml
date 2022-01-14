@@ -12,6 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/new_grey"
         app:cardCornerRadius="30dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -57,7 +58,7 @@
                     android:contentDescription="@string/description"
                     android:padding="5dp"
                     android:src="@drawable/ic_attach_money_black_24dp"
-                    android:tint="#1E88E5" />
+                    android:tint="@color/new_green" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -67,7 +68,7 @@
                     android:gravity="center"
                     android:text="@string/dcf"
                     android:textAllCaps="true"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="22sp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -92,7 +93,7 @@
                     android:layout_marginStart="10dp"
                     android:contentDescription="@string/description"
                     android:src="@drawable/ic_baseline_person_24"
-                    android:tint="#1E88E5" />
+                    android:tint="@color/new_green" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -102,7 +103,7 @@
                     android:gravity="center"
                     android:text="@string/benjamin"
                     android:textAllCaps="true"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="22sp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -127,7 +128,7 @@
                     android:layout_marginStart="10dp"
                     android:contentDescription="@string/description"
                     android:src="@drawable/ic_baseline_card_giftcard_24"
-                    android:tint="#1E88E5" />
+                    android:tint="@color/new_green" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -137,7 +138,7 @@
                     android:gravity="center"
                     android:text="My Own"
                     android:textAllCaps="true"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="22sp" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
